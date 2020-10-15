@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav">
+        <a href="#" id="sh">show/hide</a>
+        <a href="#">red</a>
+    </div>
+
+    <div id="controls" class="bg-gray-50">
+        <div>
+            <p>red</p>
+
+            <p>
+                <input type="range" min="0" max="255" value="0">
+            </p>
+
+        </div>
+
+        <div>
+            <p>blue</p>
+
+            <p>
+                <input type="range" min="0" max="255" value="0">
+            </p>
+
+        </div>
+
+        <div>
+            <p>green</p>
+
+            <p>
+                <input type="range" min="0" max="255" value="0">
+            </p>
+
+        </div>
+    </div>
+
+
+<script>
+    var sh = document.querySelector(`#sh`)
+    var controls = document.querySelector(`#controls`)
+    var body = document.querySelector(`body`)
+    var slider = document.querySelector(`input`)
+    var sliding = false;
+
+    sh.addEventListener(`click`, function(e){
+        controls.classList.toggle(`hide`)
+    })
+
+    slider[0].addEventListener(`mousedown`, function(e){
+        sliding = true;
+    })
+
+    slider[0].addEventListener(`mouseup`, function(e){
+        sliding = false;
+    })
+
+
+</script>
+</body>
+</html>

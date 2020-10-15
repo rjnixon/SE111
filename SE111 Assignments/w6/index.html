@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Nixon">
+    <title>Week 6 | Javascript Pay Calculator</title>
+</head>
+<body>
+    
+    <h1>Week 6 | Javascript Pay Calculator</h1>
+
+    <!--All Javascript must be encompassed by <script>-->
+    <script>
+
+        //Setting tax Rate (20%)
+        var taxRate = .2
+
+        //Prompting user for hourly wage ('Input')
+        var hourlyPay = Number(prompt("How much do you make an hour?"))
+
+        //Prompting user for hours worked per week ('input')
+        var weeklyHours = Number(prompt("How many hours do you work in a week?"))
+
+        //Gross pay Calculation + formatting to 2nd decimal place
+        var grossPay = ((hourlyPay * weeklyHours) * 2).toFixed(2)
+
+        //logging gross pay to console
+        console.log(`    Gross Pay:$ ` + grossPay)
+
+        //Tax deduction calculation + formatting to 2nd decimal place
+        var deduction = (grossPay * taxRate).toFixed(2)
+
+        //Logging tax deduction to console
+        console.log(`Tax Deduction:$  ` + deduction)
+
+        //Net pay calculation + formatting to 2nd decimal place
+        var netPay = (grossPay - deduction).toFixed(2)
+
+        //Logging net pay to console
+        console.log(`      Net Pay:$ ` + netPay)
+
+        //Alerting user of biweekly Gross pay, tax deduction and net pay ('print')
+        alert(`Your bi weekly pay is:$ ${grossPay}\n    Uncle Sam's Share:$   ${deduction}\n          Take Home Pay:$ ${netPay}`)
+
+    </script>
+    <!--End of Javascript-->
+
+</body>
+</html>
