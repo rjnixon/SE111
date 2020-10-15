@@ -1,0 +1,52 @@
+
+@charset "UTF-8";
+
+body {
+    color: red;
+    background-color: black;
+    
+}
+
+p {
+    color: green;
+}
+
+#nav {
+    background-color: #ccc;
+}
+
+.module {
+
+    background-color: #eee;
+}
+
+.left p{
+    color: purple;
+}
+
+.right h2 {
+    color: brown;
+}
+
+.left h2 span {
+    text-decoration: underline;
+}
+
+h1, #footer {
+    background-color: yellow;
+}
+
+#nav a {
+    font-size: 32px;
+}
+
+#nav a:link, #nav a:visited, #nav a:active{
+
+color: black;
+}
+
+#nav a:hover {
+
+color: red;
+}
+
