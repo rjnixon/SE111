@@ -1,0 +1,184 @@
+
+.hide{
+    display:none;
+}
+
+#header H1 {
+
+    background-image: url(images/headerBackground.jpg);
+    height: 70px;
+    margin: 0px;
+    padding: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    text-align: center ;
+    font-size: 60px;
+}
+
+#header H1:hover {
+    background-position-x:-300px;
+    transition: all 10s;
+    
+}
+body {
+    width: auto;
+    margin: 0px;
+}
+img {
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 4px solid rgb(233, 152, 3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h1, h2 {
+    color: rgb(207, 135, 0);
+    
+}
+
+* {background-color: #545556;}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  height:100%;
+  
+}
+
+nav {
+
+  max-width: auto;
+  background-color: rgb(97, 97, 97);
+  margin: 0px;
+  padding: 0px ;
+  border: 0px;
+  text-align:  center;
+  
+}
+
+nav ul {
+  height: auto;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  margin: 0px;
+  padding-left: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav ul li a {
+  padding: 25px ;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgb(207, 135, 0);
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(207, 135, 0);
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+a {
+  color: rgb(207, 135, 0);
+}
+
+a:hover {
+  color: green;
+}
+
+a:visited {
+  color: purple;
+}
+
+#bio {
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+#bio p {
+  margin-top: 46px;
+  border: 4px solid rgb(207, 135, 0);
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#bio p strong , i {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+#ed ul {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: left;
+  margin-left: 562px;
+  margin-right: 562px;
+  border: 4px solid rgb(207, 135, 0);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#ed ul li {
+
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 10px;
+
+}
+
+#ed ul li a {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+#ed ul li em {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+#hobbies ol {
+  
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 46px;
+  margin-left: 562px;
+  margin-right: 562px;
+  border: 4px solid rgb(207, 135, 0);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+#hobbies ol li {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+#hobbies ol li a {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+#footer {
+  margin-top: 46px;
+  background-color: rgb(241, 213, 213);
+  max-width: auto;
+  text-align: center;
+  
+}
+
+#footer p b {
+  display: block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  
+}

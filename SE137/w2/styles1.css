@@ -1,0 +1,231 @@
+
+.hide{
+    display:none;
+}
+
+a {
+    color: #FF0000;
+}
+
+p {
+    color: #3D3D3D;
+}
+
+body{
+    margin-top: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    background-color: #181818;
+}
+
+#header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin-top: 0px;
+    background-color: #212121;
+    /*background-color: #212121;*/
+}
+
+#header:hover,#header:hover H1 {
+    background-image: url("images/headerBackground.jpg");
+    background-position-x: -150px;
+    transition: all 2s;
+    color: #FF0000;
+}
+
+#header:hover h1 span {
+    color: #3D3D3D;
+    transition: all 2s;
+}
+
+#header h1 {
+    color: #3D3D3D;
+    font-size: 70px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Serif', serif;
+}
+
+#header h1 span {
+    color: #FF0000;
+    font-size: 70px;
+}
+
+#nav {
+    background-color: #212121;
+    max-width: auto;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+#nav ul {
+    text-align: center;
+    border-top: 1px solid #3D3D3D;
+    border-bottom: 1px solid #3D3D3D;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+    height: 84px;
+}
+
+#nav ul li{
+    
+    margin: 0px;
+    padding-right: 0px;
+    display: inline-block;
+    font-family: 'Noto Serif', serif;
+    font-size: 40px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav ul li a:link {
+    padding: 25px ;
+    text-transform:uppercase;
+    color: #3D3D3D;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0) 100%);
+  }
+
+nav ul li a:visited {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #FF0000;
+    transition: all 10s;
+  }
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.1) 100%);
+    color: #FF0000;
+    transition: all 2s;
+  }
+
+h2 {
+      color: #FF0000;
+      text-align: center;
+      font-size: 40px;
+      padding-bottom: 5px;
+      font-family: 'Noto Serif', serif;
+      
+  }
+
+img {
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 2px solid #3D3D3D;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }   
+
+#bio{
+    text-align: left;
+    margin-left: 400px;
+    margin-right: 400px;
+    }
+
+#bio p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 46px;
+    border: 2px solid #3D3D3D;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #212121;
+    margin-bottom: 46px;
+    }
+#bio p strong , i {
+    background-color: #212121;
+    }
+#ed ul {
+    background-color: #212121;
+    text-align: left;
+    margin-left: 562px;
+    margin-right: 562px;
+    border: 2px solid #3D3D3D;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 46px;
+    color: #3D3D3D;
+    }
+    
+#ed ul li {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #212121;
+    padding: 10px;
+    font-size: 20px;
+    
+    }
+    
+#ed ul li a:link {
+    background-color: #212121;
+    color: #3D3D3D;
+    }
+
+#ed ul li a:hover {
+    color:#FF0000;
+}
+
+#ed ul li a:visited {
+    color:#9c0202;
+}
+
+    
+#ed ul li em {
+    background-color: #212121;
+    }
+    
+#hobbies ol {
+    
+    background-color: #212121;
+    margin-bottom: 46px;
+    margin-left: 562px;
+    margin-right: 562px;
+    border: 2px solid #3D3D3D;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    }
+    
+#hobbies ol li {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    background-color: #212121;
+    color: #3D3D3D;
+    font-size: 20px;
+    }
+    
+#hobbies ol li a:link {
+    color:#3D3D3D;
+    }
+
+#hobbies ol li a:visited {
+    color:#9c0202;
+        }
+
+#hobbies ol li a:hover {
+    color:#FF0000;
+    transition: all 2s;
+        }
+
+#footer {
+    background-color: #212121;
+    max-width: auto;
+    text-align: center;
+    
+    }
+    
+#footer p b {
+    font-family: 'Noto Serif', serif;
+    margin-top: 0px;
+    border-top: 1px solid #3D3D3D;
+    border-bottom: 1px solid #3D3D3D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    background: #212121 ;
+    color: #3D3D3D;
+}
