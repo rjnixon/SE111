@@ -1,0 +1,214 @@
+.hide {
+  display: none;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 96px;
+  font-family: 'Signika', sans-serif;
+  color: #212121;
+  margin: 0px;
+}
+h2 {
+  margin: 0px;
+  font-size: 60px;
+  font-family: 'Signika', sans-serif;
+  color: #212121;
+}
+
+ul, ol, li {
+  text-align: left;
+  color: #212121;
+}
+
+p, b, a, ul, ol, li {
+  font-family: 'Montserrat', sans-serif;
+  color: #212121;
+  text-decoration: none;
+}
+
+li {
+  padding: 5px;
+}
+a:visited {
+  color: orangered;
+  text-decoration: line-through;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline wavy;
+}
+
+
+.header {grid-area: header;}
+.bio { grid-area: main; }
+.ed { grid-area: right; }
+.footer { grid-area: footer; }
+.middle { grid-area: middle;}
+
+.inner-container { grid-area: container;}
+.left {grid-area: left;}
+.middle { grid-area: middle;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'main main main main main main'
+      'container container container container right right'
+      'footer footer footer footer footer footer';
+    grid-gap: 15px;
+    background-color:#212121;
+    padding: 15px;
+  }
+
+.inner-container {
+  display: grid;
+  grid-template-areas:
+    'left left left middle middle middle';
+    
+  grid-gap: 0px;
+  padding: 0px;
+
+}
+  
+.grid-container > div {
+    background-color: #3D3D3D;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+.header h1{
+    text-align: left;
+  }
+
+.footer p{
+height: auto;
+}
+
+.middle img {
+  margin-top: 26px;
+  padding-top: 0px;
+  padding-right: 0px;
+  border: 2px solid #212121;
+}
+
+.bio p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header:hover{
+
+  border: 2px solid orangered;
+  background-color: black;
+  transform: rotate(-3deg);
+  
+}
+
+.header:hover h1 {
+  color: orangered;
+  background-color: black;
+  
+}
+
+.header:hover span {
+  text-decoration: none;
+  color: orange;
+  text-decoration: underline wavy orangered;
+}
+
+.bio:hover {
+  border: 2px solid orangered;
+  background-color: black;
+  transform: rotate(3deg);
+
+}
+
+.bio:hover h2, .bio:hover p {
+  color: orangered;
+  background-color: black;
+}
+
+.bio:hover h2 {
+  color: orange;
+  text-decoration: underline wavy orangered;
+}
+
+.bio:hover a {
+  color: orange;
+}
+
+.bio:hover a:hover {
+  color: orange;
+  text-decoration: underline wavy orangered;
+}
+
+.inner-container:hover {
+  border: 2px solid orangered;
+  background-color: black;
+  transform: rotate(-3deg);
+}
+
+.inner-container:hover a, .inner-container:hover li {
+  color: orangered;
+  background-color: black;
+  
+}
+
+.inner-container:hover h2 {
+  color: orange;
+  text-decoration: underline wavy orangered ;
+}
+
+.inner-container:hover a {
+  color: orange;
+
+}
+
+.inner-container:hover a:hover {
+  color: orange;
+  text-decoration: underline wavy orangered;
+}
+
+.inner-container:hover img {
+  border: 2px solid orangered;
+}
+
+.ed:hover {
+  border: 2px solid orangered;
+  background-color: black;
+  transform: rotate(3deg);
+}
+
+.ed:hover li {
+  color: orangered;
+  background-color: black;
+}
+
+.ed:hover h2 {
+  color: orange;
+  text-decoration: underline wavy orangered;
+}
+.ed:hover a {
+  color: orange;
+}
+
+.ed:hover a:hover {
+  color: orange;
+  text-decoration: underline wavy orangered;
+}
+
+.footer:hover {
+  border: 2px solid orangered;
+  background-color: black;
+  transform: rotate(3deg);
+}
+
+.footer:hover p b {
+  color: orange;
+  background-color: black;
+  text-decoration: underline  wavy orangered;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Nixon">
+    <meta name="description" content="Bio Page">
+    <link rel="stylesheet" href="style.css">
+    <title>Ryan Nixon Bio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="grid-container">
+
+    
+
+    <div class="header">
+        <h1>⫷ <span>Ryan Nixon</span></h1>
+    </div>
+
+    <div class="inner-container" >
+
+        <div class="left">
+
+            <h2>Hobbies</h2>
+
+            <ol>
+
+                <li><a href="#">Sailing</a></li>
+                <li><a href="#">VideoGames</a></li>
+                <li><a href="#">Snowboarding</a></li>
+                <li><a href="#">Dirt Biking</a></li>
+                <li><a href="#">Fishing</a></li>
+                <li><a href="#">Rowing</a></li>
+                <li><a href="#">Reading</a></li>
+                <li><a href="#">Hiking</a></li>
+                <li><a href="#">Computers</a></li>
+            </ol>
+        </div>
+   
+    
+        <div class="middle">
+            <!--Images for site section-->
+            <img src="images/commercialfishing.jpg" alt="Me commercial fishing" width="500px" height="500px" id="me" class="hide">
+            <img src="images/myLaserSailboat.jpg" alt="Sailing Dinghy" width="500px" height="500px" id="sailing" class="hide">
+            <img src="images/videogames.jpg" alt="video game controllers" width="500px" height="500px" id="videogames" class="hide">
+            <img src="images/snowboarding.jpg" alt="snowboarding" width="500px" height="500px" id="snowboarding" class="hide">
+            <img src="images/dirtbiking.jpg" alt="dirt biking" width="500px" height="500px" id="dirtbiking" class="hide">
+            <img src="images/fishing.jpg" alt="fishing pole" width="500px" height="500px" id="fishing" class="hide">
+            <img src="images/rowing.jpg" alt="row boat" width="500px" height="500px" id="rowing" class="hide">
+            <img src="images/reading.jpg" alt="books" width="500px" height="500px" id="reading" class="hide">
+            <img src="images/hiking.jpeg" alt="picture of mountain" width="500px" height="500px" id="hiking" class="hide">
+            <img src="images/computers.jpg" alt="Old Computer" width="500px" height="500px" id="computers" class="hide">
+
+        </div>
+    
+    </div>
+
+    <div class="bio">
+        <h2>My Bio</h2>
+
+        <p>My name is <a href="#">Ryan Nixon</a>.  I was born and raised in North Kingstown, <strong>Rhode Island</strong>.  My father’s name is Richard--he is a journeyman tool and dye maker.  My mother’s name is Linda--she teaches high school business classes.  My older sister’s name is Haley and she is a middle school math teacher.<br><br>Currently, I am attending New England Institute of Technology for Software Engineering.  Previously, I attended Community College of Rhode Island where I received an Energy Utility Technology Certificate and an Associates in Science with a major in Engineering Systems Technology.<br><br>As far as my <i>employment</i> is concerned, I used to be a deckhand and truck driver for a commercial gillnetting boat which primarily went for ground fish such as skate, monkfish, and fluke.  After I stopped commercial fishing, I worked as a garbage man and am currently employed as a tow truck driver.
+        </p>
+    </div>
+
+    <div class="ed">
+        
+        <h2>Schooling</h2>
+
+        <ul>
+            <li>North Kingstown High School,<em> High School Diploma</em></li><br>
+            <li>Community College of Rhode Island,<em> Associates in Science</em></li><br>
+            <li><a href="https://www.neit.edu/" target="_blank" class="neit">New England Institute of Technology,</a><em> Currently Attending</em></li>
+        </ul></div>
+    <div class="footer">
+        <p><b>©2020 Ryan Nixon | W3 Assignment</b></p>
+    </div>
+</div>
+
+<script>
+
+var a = document.querySelectorAll(`a`)
+var me = document.querySelector(`#me`)
+var sailing = document.querySelector(`#sailing`)
+var videogames = document.querySelector(`#videogames`)
+var snowboarding = document.querySelector(`#snowboarding`)
+var dirtbiking = document.querySelector(`#dirtbiking`)
+var fishing = document.querySelector(`#fishing`)
+var rowing = document.querySelector(`#rowing`)
+var reading= document.querySelector(`#reading`)
+var hiking = document.querySelector(`#hiking`)
+var computers = document.querySelector(`#computers`)
+
+//Image Hiding For Hobby Section
+
+a[0].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.remove(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+    
+})
+
+a[1].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.remove(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+    
+})
+
+a[2].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.remove(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+    
+})
+
+a[3].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.remove(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+    
+})
+//me
+a[9].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.remove(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+    
+})
+
+a[4].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.remove(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+    
+})
+
+a[5].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.remove(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+})
+
+a[6].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.remove(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.add(`hide`)
+})
+
+a[7].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.remove(`hide`)
+    computers.classList.add(`hide`)
+})
+
+a[8].addEventListener(`click`, function(e){
+    e.preventDefault();
+    //rest of the code goes here
+    me.classList.add(`hide`)
+    sailing.classList.add(`hide`)
+    videogames.classList.add(`hide`)
+    snowboarding.classList.add(`hide`)
+    dirtbiking.classList.add(`hide`)
+    fishing.classList.add(`hide`)
+    rowing.classList.add(`hide`)
+    reading.classList.add(`hide`)
+    hiking.classList.add(`hide`)
+    computers.classList.remove(`hide`)
+})
+//end of Image hiding 
+</script>
+</body>
+</html>
