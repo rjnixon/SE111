@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="left-header">
+                <a href="#" id="file">File</a>
+                <a href="#" id="edit">Edit</a>
+                <a href="#" id="help">Help</a>
+            </div>
+
+            <div id="center-header">
+                <p>Week 6 Assignment</p>
+            </div>
+
+            <div id="right-header" class="sprite">
+                
+                <a href="#" class="right-header-button"></a>
+            
+            </div>
+        </header>
+
+        <div class="mainContent">
+
+            <aside>
+                <div id="sidebar">
+                    <a href="#" id="slideButton"></a>
+                    <a href="#" id="slideButton2"></a>
+                    <a href="#" id="slideButton3"></a>
+                </div>
+
+            </aside>
+
+            <div id="openSidebar" class="open">
+                <details id="paper">
+                    <summary>Files</summary>
+                    
+                    <ul>
+                        <li>File 1</li>
+                        <li>File 1</li>
+                        <li>File 1</li>
+                        <li>File 1</li>
+                    </ul>
+                </details>
+
+                <details id="fire">
+                    <summary>Other</summary>
+                    
+                    <ul>
+                        <li>Stuff 1</li>
+                        <li>Stuff 2</li>
+                    </ul>
+                </details>
+            </div>
+
+            <main>
+                <div class="tabs">
+
+                    <div class="tabOne" class="tab">
+
+                        <a href="#" class="tabAirplane"></a>
+                        <p>Tab 1 </p>
+                        <a href="#" class="tabX"></a>
+                    </div>
+
+                    <div class="tabTwo" class="tab">
+                        <a href="#" class="tabAirplane"></a>
+                        <p>Tab 2 </p>
+                        <a href="#" class="tabX"></a>
+                    </div>
+
+                    <div class="tabThree" class="tab">
+                        <a href="#" class="tabAirplane"></a>
+                        <p>Tab 3 </p>
+                        <a href="#" class="tabX"></a>
+                    </div>
+
+                </div>
+
+                <div id="filepath">
+                    <p>SE 137</p> <p class="symbol">></p><p>W6</p><p class="symbol">></p> <p>Homework</p> <p class="symbol">></p><p id="changeText">Tab 1</p>
+                    
+                </div>
+                <div class="mainScreenContainer">
+
+                    <div class="mainScreen">
+
+                        <ol>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    
+                    </div>
+
+                    <div class="blankScreen">
+                    
+                    </div>
+                </div>
+            </main>
+
+        </div>
+        <footer>
+            <p>Ryan Nixon 2020</p>
+
+            <a href="#" class="fourBar"></a>
+        </footer>
+    </div>
+
+    <script>
+        var slideButton = document.querySelector(`#slideButton`)
+        var tabOne = document.querySelector(`.tabOne`)
+        var tabTwo = document.querySelector(`.tabTwo`)
+        var tabThree = document.querySelector(`.tabThree`)
+        var openSidebar = document.querySelector(`#openSidebar`)
+        var tab = document.querySelector(`.tab`)
+        var changeText = document.querySelector(`#changeText`)
+
+        slideButton.addEventListener(`click`, (e) =>{
+            document.querySelector(`#openSidebar`).classList.toggle(`open`)
+        })
+
+        tabOne.addEventListener(`click`, function(e){
+            e.preventDefault();
+            tabOne.classList.add(`tab`)
+            tabTwo.classList.remove(`tab`)
+            tabThree.classList.remove(`tab`)
+            document.getElementById(`changeText`).innerHTML = 'Tab 1'
+        })
+        
+        tabTwo.addEventListener(`click`, function(e){
+            e.preventDefault();
+            tabOne.classList.remove(`tab`)
+            tabTwo.classList.add(`tab`)
+            tabThree.classList.remove(`tab`)
+            document.getElementById(`changeText`).innerHTML = 'Tab 2'
+        })
+
+        tabThree.addEventListener(`click`, function(e){
+            e.preventDefault();
+            tabOne.classList.remove(`tab`)
+            tabTwo.classList.remove(`tab`)
+            tabThree.classList.add(`tab`)
+            document.getElementById(`changeText`).innerHTML = 'Tab 3'
+        })
+        
+    </script>
+</body>
+</html>

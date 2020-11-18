@@ -1,0 +1,448 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0px;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height:100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #505050;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    height: 2.5vh;
+    width: 100vw;
+}
+
+header #left-header {
+    margin-left: 44px;
+    padding: 0px;
+    width:20vw;
+}
+
+header #left-header a {
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #E3E3E3;
+    width: 106px;
+    height: 14px;
+}
+
+header #left-header #edit {
+    margin-left: 19px;
+}
+
+header #left-header #help {
+    margin-left: 21px;
+}
+
+#file:hover, #edit:hover, #help:hover {
+    color:#FFFFFF
+}
+
+header #center-header {
+    width: 75vw;
+}
+
+header #center-header p{
+    align-items: center;
+    margin-left: 460px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 106px;
+    height: 14px;
+}
+
+#right-header {
+    width:5vw;
+}
+.right-header-button {
+    display: inline-block;
+    background: url('images/sprites.png') no-repeat -433px -1px;
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    margin-left:80%;
+    
+}
+
+.right-header-button:hover {
+    display: inline-block;
+    background: url('images/sprites.png') no-repeat -433px -190px;
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    margin-left:80%;
+    
+}
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    height: 95.75vh;
+}
+aside {
+    overflow: hidden;
+    width: 2.75vw;
+    background-color: #505050;
+    height: 95.75vh;
+    margin-right: 0px;
+}
+
+.open {
+    
+    display:none;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 95.75vh;
+    width: 3vw;
+}
+
+#openSidebar {
+    width: 10%;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #373737;
+}
+
+details {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E3E3E3;
+    border-top: 1px solid #7B7575;
+    border-bottom: 1px solid #7B7575;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    list-style-image: url('images/fire.png');
+}
+
+summary:hover {
+    color:#FFFFFF;
+}
+
+li:hover {
+    color: #FFFFFF;
+
+}
+
+#paper {
+    list-style-image: url('images/paper.png');
+}
+#fire {
+    list-style-image: url('images/fire.png');
+}
+
+#slideButton {
+    display: block;
+    background: url('images/sprites.png') no-repeat -277px -25px;
+    background-size:800px 700px;
+	width: 55px;
+	height: 55px;
+	
+    
+}
+
+#slideButton:hover {
+    display: block;
+    background: url('images/sprites.png') no-repeat -277px -383px;
+    background-size:800px 700px;
+	width: 55px;
+	height: 55px;
+	
+}
+
+#slideButton2 {
+    display: block;
+    background: url('images/sprites.png') no-repeat -358px 9px;
+    background-size:800px 700px;
+	width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    
+}
+
+#slideButton2:hover {
+    display: block;
+    background: url('images/sprites.png') no-repeat -358px -349px;
+    background-size:800px 700px;
+	width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    
+}
+
+#slideButton3 {
+    display: flex;
+    background: url('images/sprites.png') no-repeat -769px 14px;
+    background-size:800px 700px;
+	width: 55px;
+    height: 55px;
+    margin-top: 725px;
+}
+
+#slideButton3:hover {
+    display: flex;
+    background: url('images/sprites.png') no-repeat -769px -344px;
+    background-size:800px 700px;
+	width: 55px;
+    height: 55px;
+    margin-top: 725px;
+}
+
+.tabs {
+    display: flex;
+    color: #E3E3E3;
+    width:100%;
+    background-color:black;
+    flex-direction: row;
+}
+
+.tabOne {
+    width: 173px;
+    height: 34px;
+    background-color: #373737;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2px;
+}
+
+.tabOne:hover p, .tabTwo:hover p, .tabThree:hover p{
+    color: #ffffff;
+}
+
+.tabOne:hover .tabAirplane, .tabTwo:hover .tabAirplane, .tabThree:hover .tabAirplane {
+    display: block;
+    background: url('images/sprites.png') no-repeat -170px -310px;
+    width: 11px;
+    height: 12px;
+}
+
+.tabOne:hover .tabX, .tabTwo:hover .tabX, .tabThree:hover .tabX {
+    display: block;
+    background: url('images/sprites.png') no-repeat -314px -191px;
+	width: 10px;
+    height: 10px;
+}
+
+.tabOne p{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C2C2C2;
+    margin: 0px;
+    margin-left: 4px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+a.tabAirplane {
+    display: block;
+    background: url('images/sprites.png') no-repeat -170px -121px;
+    width: 11px;
+    height: 12px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-left: 13px;
+}
+
+a.tabX {
+    display: block;
+    background: url('images/sprites.png') no-repeat -314px -2px;
+	width: 10px;
+    height: 10px;
+    margin-top: 11px;
+    margin-bottom: 7px;
+    margin-left:100px;
+    
+}
+
+.tabTwo {
+    width: 173px;
+    height: 34px;
+    background-color: #373737;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2px;
+}
+
+.tabTwo p{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C2C2C2;
+    margin: 0px;
+    margin-left: 4px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.tabThree {
+    width: 173px;
+    height: 34px;
+    background-color: #373737;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabThree p{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C2C2C2;
+    margin: 0px;
+    margin-left: 4px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+main {
+    display: flex;
+    color: #E3E3E3;
+    width:100%;
+    background-color:black;
+    flex-direction: column;
+}
+
+#filepath {
+    display: flex;
+    background-color: #161616;
+    flex-direction: row;
+}
+
+#filepath p {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #0058A9;
+}
+
+#filepath p:hover {
+    color: #FFFFFF;
+}
+
+#filepath .symbol {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #E3E3E3;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+footer {
+    background: #0254A0;
+    height:1.75vh;
+    width: 100vw;
+    flex-direction: row;
+    display: flex;
+    margin-top: 1px;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #E3E3E3;
+    margin: 0px;
+    margin-left: 16px;
+    margin-top: 1px;
+}
+
+footer .fourBar {
+    display: inline-block;
+    background: url('images/sprites.png') no-repeat -410px -1px;
+	width: 11px;
+    height: 12px;
+    margin-left: 94.25%;
+    margin-top: 2px;
+}
+
+footer .fourBar:hover {
+    display: inline-block;
+    background: url('images/sprites.png') no-repeat -410px -190px;
+	width: 11px;
+    height: 12px;
+    margin-left: 94.25%;
+    margin-top: 2px;
+    
+}
+
+.tab {
+    background-color: #161616;
+}
+
+.mainScreen {
+    background-color: #161616;
+    width: 2.5vw;
+    height:89.63vh;
+}
+
+.mainScreen li{
+    font-size: 14px;
+    color: #373737;
+    padding-left: 0px;
+
+}
+
+.mainScreen li:hover {
+    color: #ffffff;
+}
+
+.mainScreenContainer {
+    display: flex;
+    flex-direction: row;
+}
+.blankScreen {
+    color:#373737;
+    background-color: #C2C2C2;
+    width: 100%;
+}
