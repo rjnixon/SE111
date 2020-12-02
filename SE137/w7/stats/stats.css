@@ -1,0 +1,103 @@
+html, body{
+    margin:0;
+    height:100vh;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    text-decoration: underline ;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+table{
+    width:80%;
+    border-collapse: collapse;
+    
+}
+
+td {
+    border-bottom:1px solid black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+td b{
+    
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+}
+
+thead {
+    background-color: rgb(82, 82, 82);
+    color: rgb(250, 106, 53);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen
+and (min-device-width : 1001px)
+and (max-device-width : 1920px) {
+/* Styles */
+    table ,td{
+        
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size:1.5em;
+    }
+
+    tr:last-child {
+        display: none;
+    }
+}
+
+
+@media only screen
+and (max-width : 1000px) {
+/* Styles */
+table , td{
+   
+    font-size: 1em;
+}
+
+h1 {
+    font-size:1.5em;
+}
+
+tr:last-child {
+    display: contents;
+}
+
+tr:first-child {
+    display: none;
+}
+
+}
+
+
+@media only screen
+and (max-width : 500px) {
+/* Styles */
+
+thead {
+    font-size: 1.5em;
+}
+tbody {
+    font-size: 1.25em;
+}
+h1 {
+    font-size:2em;
+}
+
+.stat {
+    display: none;
+}
+}

@@ -1,0 +1,33 @@
+/*@media screen and (max-width:1000px)
+{
+body {
+    background-color:yellow;
+}}
+
+@media screen and (max-width:1920px)
+{
+body {
+    background-color:gray;
+}}
+
+@media screen and (max-width:550px)
+{
+body {
+    background-color:orange;
+}}
+
+@media screen and (orientation:landscape)
+{
+    body{background-color: red;
+        transition: all 1s;}
+}
+
+@media screen and (orientation:portrait)
+{
+    body{background-color:yellow;
+        transition:all 1s;}
+}*/
+
+#container {
+    font-size: 1em;
+}
