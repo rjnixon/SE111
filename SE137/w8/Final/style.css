@@ -7,16 +7,16 @@
 
 .center {
     text-align: center;
-    
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, .prata {
     font-family: 'Prata', serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .ryan {
-    font-size:25px;
+    font-size:2vw;
 }
 p, .oswald, li, a {
     font-family: 'Oswald', sans-serif;
@@ -29,6 +29,41 @@ body, html {
 }
 
 .bioPara {
-    font-size: 20px;
+   
     font-size: 1.5vw;
+}
+
+.pageHeader {
+    font-size: 4vw;
+}
+
+@media only screen and (max-width:590px) {
+    
+    h1, h2, h3, h4, h5, .prata {
+        font-family: 'Prata', serif;
+        font-size: 3vw;
+    }
+
+    p, .oswald, li, a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 3vw;
+    }
+    
+    body, html {
+        height: 100%;
+        font-size: 3vw;
+    }
+    
+    .bioPara {
+        
+        font-size: 3vw;
+    }
+
+    .ryan {
+        font-size:3vw;
+    }
+
+    .pageHeader {
+        font-size: 6vw;
+    }
 }
