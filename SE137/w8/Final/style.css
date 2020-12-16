@@ -12,6 +12,7 @@
 
 h1, h2, h3, h4, h5, .prata {
     font-family: 'Prata', serif;
+    font-size: 1.5vw;
 }
 
 .ryan {
@@ -19,12 +20,15 @@ h1, h2, h3, h4, h5, .prata {
 }
 p, .oswald, li, a {
     font-family: 'Oswald', sans-serif;
+    font-size: 1.5vw;
 }
 
 body, html {
     height: 100%;
+    font-size: 1.5vw;
 }
 
 .bioPara {
     font-size: 20px;
+    font-size: 1.5vw;
 }
